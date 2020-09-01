@@ -20,6 +20,7 @@ body {
   align-items: center;
   justify-items: center;
   max-width: 800px;
+  background-color: darkslategray;
   
 }
 
@@ -35,7 +36,7 @@ h1 {
   font-family: 'Playfair Display';
   text-align: center;
   letter-spacing: 3px;
-  font-size: 5rem;
+  font-size: 3rem;
   margin: 20px;
 }
 
@@ -49,7 +50,7 @@ h1 {
 
 input {
   font-family: 'Roboto Mono';
-  font-size: 9em;
+  font-size: 6em;
   width: 50%;
   border: 0px;
   padding: 0px;
@@ -64,7 +65,7 @@ input {
 select {
   width: 95%;
   font-family: 'Quicksand', sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
   background: transparent;
   border: 0;
   text-align: center;
@@ -78,6 +79,7 @@ select {
   justify-content: center;
   width: 100%;
   /* justify-items: center; */
+  margin: 8px 0px 0px 0px;
 
 }
 
@@ -90,6 +92,17 @@ select {
 .temp-box h2 {
   font-size: 3rem;
 
+}
+
+.equals {
+  font-family: 'Roboto Mono';
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+  margin: 8px 0px 0px 0px;
+  padding: 0;
+  background-color: cadetblue;
+  width: 100%;
 }
 
 #celcius {
@@ -111,7 +124,7 @@ select {
 footer {
   background-color: darkgray;
   padding: 0px;
-  margin: 0px;
+  margin: 8px 0px 0px 0px ;
   height: auto;
   width: 100%;
   text-align: center;

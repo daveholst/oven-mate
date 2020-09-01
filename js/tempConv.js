@@ -30,7 +30,6 @@ function fToC() {
   let inputF = document.querySelector('#fInput').value;
   let newC = Math.round((inputF - 32) / 1.8);
   let tempCond
-  // console.log("before" + document.querySelector('#tempCond').value)
 
   document.querySelector('#cInput').value = newC;
   if (newC <= 90) {
@@ -54,7 +53,6 @@ function fToC() {
   }
   document.querySelector('#tempCond').value = tempCond
 
-  console.log(document.querySelector('#tempCond').value)
 
 }
 

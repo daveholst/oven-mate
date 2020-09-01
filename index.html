@@ -12,28 +12,32 @@
     <h1>Oven Mate.</h1>
   </header>
   <form action="" id="temp-mate">
+    <div class="temp-box" id="celcius">
+    
+    <input class="temp-input" type="number" id="cInput" name="c-input" value="93" oninput="cToF()">
+    <h2>&deg; C</h2>
+    </div>
+    <div class ="equals">===</div>
+    <div class="temp-box" id="oven-con">
+      <select name="temp-cond" id="tempCond" form="temp-mate" oninput="condToTemp()">
+        <option value="90">Cool Oven</option>
+        <option value="120">Very Slow Oven</option>
+        <option value="155">Slow Oven</option>
+        <option value="165">Moderetly Slow</option>
+        <option value="185">Moderate Oven</option>
+        <option value="195">Moderatly Hot</option>
+        <option value="215">Hot Oven</option>
+        <option value="245">Very Hot Oven</option>
+        <option value="250">Fast Oven</option>
+      </select> 
+    </div>
+    <div class ="equals">===</div>
     <div class="temp-box" id="far">
       <input class="temp-input" type="number" id="fInput" name="f-input" value="200" oninput="fToC()">
       <h2>&deg; F</h2>
       
     </div>
-    <div class="temp-box" id="oven-con">
-    <select name="temp-cond" id="tempCond" form="temp-mate" oninput="condToTemp()">
-      <option value="90">Cool Oven</option>
-      <option value="120">Very Slow Oven</option>
-      <option value="155">Slow Oven</option>
-      <option value="165">Moderetly Slow</option>
-      <option value="185">Moderate Oven</option>
-      <option value="195">Moderatly Hot</option>
-      <option value="215">Hot Oven</option>
-      <option value="245">Very Hot Oven</option>
-      <option value="250">Fast Oven</option>
-    </select> 
-    </div>
-    <div class="temp-box" id="celcius">
-    <input class="temp-input" type="number" id="cInput" name="c-input" value="93" oninput="cToF()">
-    <h2>&deg; C</h2>
-    </div>
+    
   </form>
 </body>
 <footer>
