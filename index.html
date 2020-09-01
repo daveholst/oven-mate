@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Quicksand&family=Roboto+Mono:wght@600&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Oven Mate Temperature Converter & Guide</title>
+</head>
+<body>
+  <header>
+    <h1>Oven Mate.</h1>
+  </header>
+  <form action="" id="temp-mate">
+    <div class="temp-box" id="far">
+      <input class="temp-input" type="number" id="fInput" name="f-input" value="200" oninput="fToC()">
+      <h2>&deg; F</h2>
+      
+    </div>
+    <div class="temp-box" id="oven-con">
+    <select name="temp-cond" id="tempCond" form="temp-mate" oninput="condToTemp()">
+      <option value="90">Cool Oven</option>
+      <option value="120">Very Slow Oven</option>
+      <option value="155">Slow Oven</option>
+      <option value="165">Moderetly Slow</option>
+      <option value="185">Moderate Oven</option>
+      <option value="195">Moderatly Hot</option>
+      <option value="215">Hot Oven</option>
+      <option value="245">Very Hot Oven</option>
+      <option value="250">Fast Oven</option>
+    </select> 
+    </div>
+    <div class="temp-box" id="celcius">
+    <input class="temp-input" type="number" id="cInput" name="c-input" value="93" oninput="cToF()">
+    <h2>&deg; C</h2>
+    </div>
+  </form>
+</body>
+<footer>
+  <h3>Made by Dave 🙉</h3>
+</footer>
+<script src="/js/tempConv.js"></script>
+</html>
+
